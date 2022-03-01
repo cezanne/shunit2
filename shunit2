@@ -1367,6 +1367,7 @@ _shunit_execSuite
 if ! oneTimeTearDown; then
   _shunit_fatal "oneTimeTearDown() returned non-zero return code."
 fi
+__shunit_clean=${SHUNIT_TRUE}
 
 # Generate a report summary.
 _shunit_generateReport
